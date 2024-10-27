@@ -1,0 +1,2 @@
+C:\Users\mille\source\repos\FirefishTechnicalTask\FirefishCRUDWebApp\obj\Debug\FirefishCRUDWebApp.esproj.CoreCompileInputs.cache
+C:\Users\mille\Source\Repos\Firefish\FirefishCRUDWebApp\obj\Debug\FirefishCRUDWebApp.esproj.CoreCompileInputs.cache

@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirefishTechnicalTaskAPI", "FirefishTechnicalTask\FirefishTechnicalTaskAPI.csproj", "{95DEBCF2-E93C-4EC7-9502-B54E73EA1C81}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "FirefishCRUDWebApp", "FirefishCRUDWebApp\FirefishCRUDWebApp.esproj", "{CA5899D3-6DF9-4CFE-AE8C-7AC9E3B5C31A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95DEBCF2-E93C-4EC7-9502-B54E73EA1C81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95DEBCF2-E93C-4EC7-9502-B54E73EA1C81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95DEBCF2-E93C-4EC7-9502-B54E73EA1C81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95DEBCF2-E93C-4EC7-9502-B54E73EA1C81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA5899D3-6DF9-4CFE-AE8C-7AC9E3B5C31A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA5899D3-6DF9-4CFE-AE8C-7AC9E3B5C31A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA5899D3-6DF9-4CFE-AE8C-7AC9E3B5C31A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CA5899D3-6DF9-4CFE-AE8C-7AC9E3B5C31A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA5899D3-6DF9-4CFE-AE8C-7AC9E3B5C31A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA5899D3-6DF9-4CFE-AE8C-7AC9E3B5C31A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {269D56BF-D030-4DCC-98C7-07964236E0F0}
+	EndGlobalSection
+EndGlobal

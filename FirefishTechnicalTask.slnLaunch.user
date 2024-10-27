@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Name": "FirefishTechnicalTask\\FirefishTechnicalTaskAPI.csproj",
+        "Action": "Start",
+        "DebugTarget": ""
+      },
+      {
+        "Name": "FirefishCRUDWebApp\\FirefishCRUDWebApp.esproj",
+        "Action": "Start",
+        "DebugTarget": ""
+      }
+    ]
+  }
+]

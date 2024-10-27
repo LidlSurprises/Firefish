@@ -1,0 +1,84 @@
+<div>
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header">
+        <h4>
+          Candidate Create
+          <a class="btn btn-danger float-end" routerLink="/candidate">Back</a>
+        </h4>
+      </div>
+      <div class="card-body">
+        <div *ngIf="isLoading; else elseForm">
+          <app-loader />
+        </div>
+        <ng-template #elseForm>
+          <div class="mb-3">
+            <form (ngSubmit)="saveCandidate()">
+              <div class="mb-3">
+                <label>Forename</label>
+                <input class="form-control" name="Forename" type="text" [(ngModel)]="forename" />
+                <span class="text-danger" *ngIf="errors.Forename">{{errors.Forename}}</span>
+              </div>
+
+              <div class="mb-3">
+                <label>Surname</label>
+                <input class="form-control" name="Surname" type="text" [(ngModel)]="surname" />
+                <span class="text-danger" *ngIf="errors.Surname">{{errors.Surname}}</span>
+              </div>
+
+              <div class="mb-3">
+                <mat-form-field>
+                  <input [matDatepicker]="datepicker" name="DateOfBirth" placeholder="Select Date" [(ngModel)]="dateOfBirth" matInput>
+                  <mat-datepicker-toggle matSuffix [for]="datepicker" />
+                  <mat-datepicker #datepicker />
+                </mat-form-field>
+                <span class="text-danger" *ngIf="errors.DateOfBirth">{{errors.DateOfBirth}}</span>
+              </div>
+
+              <div class="mb-3">
+                <label>Address</label>
+                <input class="form-control" name="Address" type="text" [(ngModel)]="address1" />
+                <span class="text-danger" *ngIf="errors.Address">{{errors.Address}}</span>
+              </div>
+
+              <div class="mb-3">
+                <label>Town</label>
+                <input class="form-control" name="Town" type="text" [(ngModel)]="town" />
+                <span class="text-danger" *ngIf="errors.Town">{{errors.Town}}</span>
+              </div>
+
+              <div class="mb-3">
+                <label>Country</label>
+                <input class="form-control" name="Country" type="text" [(ngModel)]="country" />
+                <span class="text-danger" *ngIf="errors.Country">{{errors.Country}}</span>
+              </div>
+
+              <div class="mb-3">
+                <label>Postcode</label>
+                <input class="form-control" name="Postcode" type="text" [(ngModel)]="postCode" />
+                <span class="text-danger" *ngIf="errors.Postcode">{{errors.Postcode}}</span>
+              </div>
+
+              <div class="mb-3">
+                <label>Home</label>
+                <input class="form-control" name="PhoneMobile" type="text" [(ngModel)]="phoneHome" />
+                <span class="text-danger" *ngIf="errors.PhoneHome">{{errors.PhoneHome}}</span>
+              </div>
+              <div class="mb-3">
+                <label>Mobile</label>
+                <input class="form-control" name="PhoneMobile" type="text" [(ngModel)]="phoneMobile" />
+                <span class="text-danger" *ngIf="errors.PhoneMobile">{{errors.PhoneMobile}}</span>
+              </div>
+              <div class="mb-3">
+                <label>Work</label>
+                <input class="form-control" name="PhoneWork" type="text" [(ngModel)]="phoneWork" />
+                <span class="text-danger" *ngIf="errors.PhoneWork">{{errors.PhoneWork}}</span>
+              </div>
+              <button class="btn btn-primary" type="submit">Save</button>
+            </form>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>
